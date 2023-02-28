@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	font-family: "Julius Sans One", sans-serif;
+}
+
+.caffeine__calculator-conatiner {
+	display: flex;
+	padding: 3em;
+	width: 75%;
+	height: 360px;
+	align-items: center;
+	margin-top: 7%;
+	margin-left: 9%;
+	justify-content: center;
+	background-color: #a7bcb9;
+	border-radius: 40px;
+}
+.main,
+.aside {
+	flex: 4;
+	padding: 1em;
+	margin: 0.6em;
+	background-color: #f0ece2;
+	height: 300px;
+	border-radius: 3%;
+}
+
+.aside {
+	flex: 3;
+}
+.aside h2 {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 22px;
+}
+.aside .item-caffeine {
+	margin-top: 10px;
+}
+.main .total-caffeine {
+	margin-top: 30px;
+	margin-left: 5px;
+	font-size: 15px;
+	border-top: 1px solid black;
+}
+
+h5 {
+	margin-top: 20px;
+	padding: 10px;
+	font-family: "Julius Sans One", sans-serif;
+}
+
+.main h2 {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 22px;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+}
+.caffeine-input {
+	display: flex;
+	flex-direction: column;
+	margin: 0.4em;
+	padding: 0.5em;
+	align-items: space-between;
+}
+.input-age,
+.input-weight {
+	width: 66px;
+	padding: 0.4em;
+	margin-bottom: 1rem;
+	border-radius: 5px 5px 5px 5px;
+	outline: none;
+	border: 1px solid;
+}
+
+.input-drink {
+	width: 135px;
+	padding: 0.4em;
+	margin-right: 7px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.radio_weight {
+	display: inline-flex;
+	overflow: hidden;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.55);
+}
+.radio__input-weight {
+	display: none;
+}
+.radio__label-weight {
+	padding: 0.4em;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: black;
+
+	background: white;
+	cursor: pointer;
+	transition: background 0.1s;
+}
+.radio__label-weight:not(:last-of-type) {
+	border-right: 1px solid black;
+}
+.radio__input-weight:checked + .radio__label-weight {
+	background: #e8d5b7;
+}
+
+.radio_measurement {
+	display: inline-flex;
+	overflow: hidden;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.55);
+}
+.radio__input-measurement {
+	display: none;
+}
+.radio__label-measurement {
+	padding: 0.47em;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: black;
+
+	background: white;
+	cursor: pointer;
+	transition: background 0.1s;
+}
+.radio__label-measurement:not(:last-of-type) {
+	border-right: 1px solid black;
+}
+.radio__input-measurement:checked + .radio__label-measurement {
+	background: #e8d5b7;
+}
+.add-drink {
+	margin-left: 15px;
+	padding: 0.4em;
+	border-radius: 10px;
+	border: 0.4px solid;
+	font-size: 13px;
+	background-color: white;
+}
+
+.add-drink:hover {
+	background-color: #e8d5b7;
+}
+
+.caffeine__output-label {
+	display: flex;
+	gap: 63px;
+	margin-left: 5px;
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+.drinkList {
+	font-family: sans-serif;
+}
+
+.select-age {
+	width: 220px;
+	padding: 0.4em;
+	margin-bottom: 15px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.main .amountOfDrinks {
+	padding: 0.4em;
+}

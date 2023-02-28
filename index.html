@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <section class="caffeine__calculator-conatiner">
+        <main class="main">
+            <h2>How much caffeine are you consuming?</h2>
+            <div class="caffeine-input">
+                <select id="age" name="age" class="select-age">
+                    <option value="children">Children (under 12)</option>
+                    <option value="youngadult">Young Adult (18-25)</option>
+                    <option value="adults">Adults (26-50)</option>
+                    <option value="olderadult">Older Adult (51+)</option>
+                    <option value="pregnant">Pregnant Women</option>
+                </select>
+
+
+                <div class="weight-input-field">
+                    <input type="number" class="input-weight" id="weight" name="weight" placeholder="Weight" min="0"
+                        max="1000">
+                    <div class="radio_weight" id="weightMeassurement">
+                        <input type="radio" class="radio__input-weight" value="Kg" name="radio1" id="valueKg">
+                        <label for="valueKg" class="radio__label-weight">Kg</label>
+                        <input type="radio" class="radio__input-weight" value="Lbs" name="radio1" id="valueLbs">
+                        <label for="valueLbs" class="radio__label-weight">Lbs</label>
+                    </div>
+                </div>
+
+
+                <div class="drink-input-field">
+
+                    <select id="myDropDown" class="input-drink"></select>
+                    <input type="number" class="amountOfDrinks" id="numDrinks" name="numDrinks" placeholder="Total"
+                        min="0" max="1000">
+                    <div class="radio_measurement">
+                        <input type="radio" class="radio__input-measurement" value="ml" name="radio2" id="valueMg">
+                        <label for="valueMg" class="radio__label-measurement">ml</label>
+                        <input type="radio" class="radio__input-measurement" value="floz" name="radio2" id="valueFloz">
+                        <label for="valueFloz" class="radio__label-measurement">fl oz</label>
+                        <input type="radio" class="radio__input-measurement" value="cup" name="radio2" id="valueCup">
+                        <label for="valueCup" class="radio__label-measurement">cup</label>
+
+                    </div>
+                    <button type="button" class="add-drink" id="btn" onclick="displayList()">Add Drink</button>
+
+
+                </div>
+                <h5 id="totalCaffeine" class="total-caffeine"></h5>
+                <h5 id="caffeineLimit"></h5>
+
+            </div>
+        </main>
+        <aside class="aside">
+            <h2>Caffeine Calculator</h2>
+            <div class="caffeine__output-label">
+                <h3>Item</h3>
+                <h3>Amount of Caffeine</h3>
+                <h3>Quntity</h3>
+            </div>
+            <p id="drinkList" class="drinkList"></p>
+        </aside>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
